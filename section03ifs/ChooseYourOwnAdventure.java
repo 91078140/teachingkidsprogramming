@@ -28,19 +28,13 @@ public class ChooseYourOwnAdventure
       String action1 = askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
       if ("toilet".equalsIgnoreCase(action1))
       {
-        //            pourIntoToilet (recipe below) --#12.1
-        //            ------------- Recipe for pourIntoToilet --#12.2
-        //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
-        MessageBox.showMessage(
-            "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-        //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
+        pourIntoToilet();
         //               If they answer "yes" --#13.1
         //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
         //               Otherwise, if they answer "heck yes" --#13.2
         //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
         //               Otherwise, if they answer anything else --#13.3
         //                    endStory --#16
-        //            ------------- End of pourIntoToilet recipe --#12.3
       }
       if ("backyard".equalsIgnoreCase(action1))
       {
@@ -56,7 +50,7 @@ public class ChooseYourOwnAdventure
         //                    endStory --#23
         //         ------------- End of pourIntoBackyard recipe --#19.3
       }
-      else
+      else if (action1 == null)
       {
         endStory();
       }
@@ -65,6 +59,12 @@ public class ChooseYourOwnAdventure
     {
       endStory();
     }
+  }
+  private static void pourIntoToilet()
+  {
+    MessageBox.showMessage(
+        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
+    MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
   }
   private static void endStory()
   {
