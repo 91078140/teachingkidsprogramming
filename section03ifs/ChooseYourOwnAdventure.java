@@ -29,18 +29,28 @@ public class ChooseYourOwnAdventure
       if ("toilet".equalsIgnoreCase(action1))
       {
         pourIntoToilet();
-        //               If they answer "yes" --#13.1
-        //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-        //               Otherwise, if they answer "heck yes" --#13.2
-        //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-        //               Otherwise, if they answer anything else --#13.3
-        //                    endStory --#16
+        if ("yes".equalsIgnoreCase(action1))
+        {
+        }
+        MessageBox
+            .showMessage("Awesome dude! You live out the rest of your life fighting crimes and eating pizza!");
+        if ("heck yes".equalsIgnoreCase(action1))
+        {
+          MessageBox
+              .showMessage("Awesome dude! You live out the rest of your life fighting crimes and eating pizza!");
+        }
+        else if (action1 == null)
+        {
+          endStory();
+        }
       }
       if ("backyard".equalsIgnoreCase(action1))
       {
         //            pourIntoBackyard (recipe below) --#19.1
         //            ------------- Recipe for pourIntoBackyard --#19.2
         //                Tell the user "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water." --#17
+        MessageBox.showMessage(
+            "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water.");
         //                Ask the user "As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?" --#18
         //                If they answer "faint" --#20.1
         //                        Tell the user "You made a delicious soup! Yum! The end." --#21
