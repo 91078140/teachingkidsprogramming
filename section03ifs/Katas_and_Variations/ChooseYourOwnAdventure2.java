@@ -1,4 +1,4 @@
-package org.teachingkidsprogramming.section03ifs;
+package org.teachingkidsprogramming.section03ifs.Katas_and_Variations;
 
 import java.awt.Color;
 
@@ -7,7 +7,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventure2
 {
   public static void main(String[] args)
   {
