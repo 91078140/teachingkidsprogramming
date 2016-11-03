@@ -25,7 +25,7 @@ public class ChooseYourOwnAdventure2
     else if ("explore".equalsIgnoreCase(action))
     {
       approachOoze();
-      String action1 = askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
+      String action1 = askAQuestion("Do you want to pour the ooze into the 'backyard' , 'toilet' or 'drink it'?");
       if ("toilet".equalsIgnoreCase(action1))
       {
         pourIntoToilet();
@@ -63,6 +63,21 @@ public class ChooseYourOwnAdventure2
       else if (action1 == null)
       {
         endStory();
+      }
+      if ("drink it".equalsIgnoreCase(action1))
+      {
+        MessageBox
+            .showMessage("It is so bad that you stop drinking it do you want to continue 'drinking' or 'stop'.");
+        if ("stop".equalsIgnoreCase(action1))
+        {
+          MessageBox
+              .showMessage("You stoped and the ooze melts your stomach, you can't move and you die. THE END");
+        }
+        if ("drinking".equalsIgnoreCase(action1))
+        {
+          MessageBox.showMessage(
+              "You feel great, so great that you fly away and fight crime until you become the villan. The end.");
+        }
       }
     }
     else
