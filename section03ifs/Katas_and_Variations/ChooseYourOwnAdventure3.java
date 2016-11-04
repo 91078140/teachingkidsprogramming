@@ -7,7 +7,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure2
+public class ChooseYourOwnAdventure3
 {
   public static void main(String[] args)
   {
@@ -15,17 +15,17 @@ public class ChooseYourOwnAdventure2
   }
   private static void startStory()
   {
-    tellMoreStory("One morning the Tortoise woke up in a dream.");
+    tellMoreStory("One morning Godzilla saw a city");
     animateStartStory();
-    String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    String action = askAQuestion("Do you want to 'enter' or 'walk away' from the city?");
+    if ("walk away".equalsIgnoreCase(action))
     {
       wakeUp();
     }
-    else if ("explore".equalsIgnoreCase(action))
+    else if ("enter".equalsIgnoreCase(action))
     {
       approachOoze();
-      String action1 = askAQuestion("Do you want to pour the ooze into the 'backyard' , 'toilet' or 'drink it'?");
+      String action1 = askAQuestion("Do you want to 'breack it' or 'destory it'?");
       if ("toilet".equalsIgnoreCase(action1))
       {
         pourIntoToilet();
@@ -107,8 +107,8 @@ public class ChooseYourOwnAdventure2
   }
   private static void approachOoze()
   {
-    MessageBox.showMessage("You approch a glowing bucket of green ooze.");
-    MessageBox.showMessage("Afraid of getting in troble you pick up the bucket.");
+    MessageBox.showMessage("There is a brige in your way.");
+    MessageBox.showMessage("You are so big that you can't go under.");
   }
   private static void animateStartStory()
   {
