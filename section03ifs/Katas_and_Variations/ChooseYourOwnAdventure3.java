@@ -25,8 +25,8 @@ public class ChooseYourOwnAdventure3
     else if ("enter".equalsIgnoreCase(action))
     {
       approachOoze();
-      String action1 = askAQuestion("Do you want to 'breack it' or 'destory it'?");
-      if ("toilet".equalsIgnoreCase(action1))
+      String action1 = askAQuestion("Do you want to 'break it' or 'destory it'?");
+      if ("break it".equalsIgnoreCase(action1))
       {
         pourIntoToilet();
         if ("yes".equalsIgnoreCase(action1))
@@ -44,7 +44,7 @@ public class ChooseYourOwnAdventure3
           endStory();
         }
       }
-      if ("backyard".equalsIgnoreCase(action1))
+      if ("destroy it".equalsIgnoreCase(action1))
       {
         pourIntoBackyard();
         if ("faint".equalsIgnoreCase(action1))
