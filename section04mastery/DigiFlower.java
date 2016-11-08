@@ -19,7 +19,7 @@ public class DigiFlower
   private static void drawOctogon()
   {
     createColorPalette();
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 15; i++)
     {
       Tortoise.setPenColor(ColorWheel.getNextColor());
       Tortoise.move(50);
@@ -28,7 +28,7 @@ public class DigiFlower
   }
   private static void createColorPalette()
   {
-    for (int i = 0; i < 15; i++)
+    for (int i = 0; i < 8; i++)
     {
       Tortoise.turn(360 / 15);
     }
