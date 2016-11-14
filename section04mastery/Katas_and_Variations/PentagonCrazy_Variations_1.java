@@ -15,28 +15,28 @@ public class PentagonCrazy_Variations_1
   }
   private static void drawPentagon()
   {
-    for (int i = 0; i < 200; i++)
+    for (int i = 0; i < 400; i++)
     {
       adjustPen(i);
       i += 1;
       Tortoise.move(i);
-      Tortoise.turn(360 / 2);
-      Tortoise.turn(5);
+      Tortoise.turn(600 / 3);
+      Tortoise.turn(4);
     }
   }
   private static void adjustPen(int i)
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());
-    Tortoise.setPenWidth(Tortoise.getPenWidth() + 1);
-    if (Tortoise.getPenWidth() > 4)
+    Tortoise.setPenWidth(Tortoise.getPenWidth() + 2);
+    if (Tortoise.getPenWidth() > 2)
     {
-      Tortoise.setPenWidth(1);
+      Tortoise.setPenWidth(2);
     }
   }
   private static void createColorPalette()
   {
     ColorWheel.addColor(PenColors.Blues.SteelBlue);
-    ColorWheel.addColor(PenColors.Purples.DarkOrchid);
+    ColorWheel.addColor(PenColors.Greens.LimeGreen);
     ColorWheel.addColor(PenColors.Reds.FireBrick);
     ColorWheel.addColor(PenColors.Blues.Teal);
     ColorWheel.addColor(PenColors.Yellows.Yellow);
