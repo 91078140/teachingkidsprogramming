@@ -7,7 +7,7 @@ public class TowersOfHanoi
   public static void main(String[] args)
   {
     // create some constant variables (final means they can't change after initialization)
-    final int NUM_DISCS = 8; // number of discs to move
+    final int NUM_DISCS = 3; // number of discs to move
     final int FROM_PEG = 1; // initial 'from' peg
     final int TO_PEG = 3; // initial 'to' peg
     final int TEMP_PEG = 2; // initial 'temp' peg
