@@ -10,34 +10,34 @@ public class SpiderWebVariation01
   {
     Tortoise.show();
     Tortoise.setSpeed(10);
-    Tortoise.setPenWidth(1);
+    Tortoise.setPenWidth(5);
     Tortoise.setAnimal(Animals.Spider);
-    Tortoise.setPenColor(PenColors.Reds.Red);
-    Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.Black);
+    Tortoise.setPenColor(PenColors.Browns.SandyBrown);
+    Tortoise.getBackgroundWindow().setBackground(PenColors.Browns.SaddleBrown);
     float length = 15f;
     float zoom = 5f;
-    for (int i = 0; i < 25; i++)
+    for (int i = 0; i < 15; i++)
     {
       length = weaveOneLayer(length, zoom);
-      zoom = zoom * 5f;
+      zoom = zoom * 6f;
     }
   }
   private static float weaveOneLayer(float length, float zoom)
   {
-    for (int i = 0; i < 35; i++)
+    for (int i = 0; i < 15; i++)
     {
       drawTriangle(length, zoom);
-      Tortoise.turn(360 / 20);
+      Tortoise.turn(720 / 40);
       length = length + zoom;
     }
     return length;
   }
   private static void drawTriangle(float length, float zoom)
   {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 35; i++)
     {
       Tortoise.move(length);
-      Tortoise.turn(360 / 20);
+      Tortoise.turn(720 / 29);
     }
   }
 }

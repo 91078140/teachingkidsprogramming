@@ -18,18 +18,18 @@ public class RecursiveSquare
   {
     if (length > 10)
     {
+      moveToTheSquareStart(length);
+      makeASquare(length / 1.7);
     }
-    moveToTheSquareStart(length);
     for (int i = 0; i < 4; i++)
     {
-      Tortoise.move(length);
-      makeASquare(length / 1.7);
       if (i < 3)
       {
+        Tortoise.turn(90);
+        Tortoise.move(length);
       }
-      Tortoise.turn(90);
+      moveBackToCenter(length);
     }
-    moveBackToCenter(length);
     length = length * 2;
   }
   private static void moveBackToCenter(double length)
