@@ -6,7 +6,6 @@ public class AdLibs
 {
   public static void main(String[] args)
   {
-    //  Ask the user to enter an adverb, save it as currentAdverb --#2
     String currentAdverb = "Enter an adverb.";
     MessageBox.askForTextInput(currentAdverb);
     //  Ask the user to enter a verb ending in '-ed', save it as currentEdVerb --#4

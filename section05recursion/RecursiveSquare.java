@@ -19,18 +19,16 @@ public class RecursiveSquare
     if (length > 10)
     {
       moveToTheSquareStart(length);
-      makeASquare(length / 1.7);
-    }
-    for (int i = 0; i < 4; i++)
-    {
-      if (i < 3)
+      for (int i = 0; i < 4; i++)
       {
-        Tortoise.turn(90);
         Tortoise.move(length);
+        makeASquare(length / 1.7);
+        if (i < 3)
+          Tortoise.turn(90);
       }
       moveBackToCenter(length);
+      length = length * 2;
     }
-    length = length * 2;
   }
   private static void moveBackToCenter(double length)
   {
