@@ -6,14 +6,13 @@ public class AdLibs
 {
   public static void main(String[] args)
   {
-    String currentAdverb = "Enter an adverb.";
-    MessageBox.askForTextInput(currentAdverb);
-    //  Ask the user to enter a verb ending in '-ed', save it as currentEdVerb --#4
-    //  Ask the user to enter a body part, save it as currentBodyPart --#6
+    String currentAdverb = MessageBox.askForTextInput("Enter an adverb");
+    String currentEdVerb = MessageBox.askForTextInput("Enter a verb ending in -ed");
+    String currentBodyPart = MessageBox.askForTextInput("Enter a body part");
     String currentStory = "Today ";
-    //  Add the words "I woke " + currentAdverb + ". " to the currentStory --#3
-    //  Add the words '"Then I " + currentEdVerb + " " to the currentStory --#5
-    //  Add the words "my " + currentBodyPart + ". " to the current story --#7
+    currentStory = currentStory + "I woke " + currentAdverb + ". ";
+    currentStory = currentStory + "Then I " + currentEdVerb + " ";
+    currentStory = currentStory + "my " + currentBodyPart + ". ";
     MessageBox.showMessage(currentStory);
   }
 }
