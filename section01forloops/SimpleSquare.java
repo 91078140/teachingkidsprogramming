@@ -8,8 +8,6 @@ public class SimpleSquare
 {
   public static void main(String[] args) throws Exception
   {
-    VirtualProctor.setName("Timothy and John");
-    VirtualProctor.setClassName("Palm Digital");
     Tortoise.show();
     Tortoise.setSpeed(10);
     for (int i = 0; i < 4; i++)
@@ -19,6 +17,8 @@ public class SimpleSquare
       Tortoise.turn(90);
     }
     //  (Optional): Sign your work using the Virtual Proctor 
+    VirtualProctor.setName("Timothy and John");
+    VirtualProctor.setClassName("Palm Digital");
     //  See your work at http://virtualproctor.tkpjava.org
   }
 }
